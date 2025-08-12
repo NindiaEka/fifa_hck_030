@@ -9,7 +9,7 @@ import plotly.express as px
 def run():
     # "with" notation
     st.write("# FIFA Player Data Analysis")
-    gambar = Image.open('ref_images\download.jpg')
+    gambar = Image.open('ref_images/download.jpg')
     st.image(gambar)
 
     # Latar belakang
@@ -54,5 +54,6 @@ def run():
     st.write('## Tinggi vs berat pemain')
     chart = px.scatter(data, x='Weight', y='Height')
     st.plotly_chart(chart)
+
 
 
